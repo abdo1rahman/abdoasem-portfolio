@@ -37,7 +37,7 @@ const HeroSection = () => {
           
           <h2 className="text-xl sm:text-2xl md:text-3xl font-light mb-8 text-muted-foreground">
             Front-End Engineer & 
-            <span className="text-gradient-secondary ml-2">Web Craftsman</span>
+            <span className="text-gradient-secondary ml-2">Web Developer</span>
           </h2>
           
           <p className="text-lg sm:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
@@ -64,7 +64,7 @@ const HeroSection = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-8 mb-16">
             <a 
-              href="https://github.com" 
+              href="https://github.com/abdo1rahman" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
@@ -73,7 +73,7 @@ const HeroSection = () => {
               <Github className="w-8 h-8" />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://linkedin.com/in/abdo1rahman" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-secondary transition-all duration-300 hover:scale-110"
@@ -81,8 +81,9 @@ const HeroSection = () => {
             >
               <Linkedin className="w-8 h-8" />
             </a>
+            {/* !mail not working yet */}
             <a 
-              href="mailto:abdolrahman@example.com"
+              href="mailto:abdoasem2055@gmail.com"
               className="text-muted-foreground hover:text-accent transition-all duration-300 hover:scale-110"
               aria-label="Email Contact"
             >
@@ -94,7 +95,7 @@ const HeroSection = () => {
         {/* Scroll Indicator */}
         <button 
           onClick={() => scrollToSection('about')}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-primary hover:text-primary-glow transition-all duration-300 hover:scale-110 animate-bounce"
+          className="absolute left-1/2 transform -translate-x-1/2 text-primary hover:text-primary-glow transition-all duration-300 hover:scale-110 animate-bounce"
           aria-label="Scroll to about section"
         >
           <ArrowDown className="w-8 h-8" />

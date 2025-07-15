@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';
+import emailjs from 'emailjs-com';
+const SERVICE_ID = 'service_k63y4cl';
+const TEMPLATE_ID = 'template_f6w368j';
+const PUBLIC_KEY = 'h57xJerqfGfJvRR5p';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -23,36 +27,46 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        formData,
+        PUBLIC_KEY
+      );
+
       toast({
         title: "Message sent successfully!",
         description: "Thank you for reaching out. I'll get back to you soon.",
       });
-      
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
+
+      setFormData({ name: '', email: '', subject: '', message: '' });
+
+    } catch (error) {
+      console.error(error);
+      toast({
+        title: "Something went wrong.",
+        description: "Please try again later.",
+        variant: "destructive"
       });
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   const contactInfo = [
     {
       icon: Mail,
       title: 'Email',
-      value: 'abdolrahman@example.com',
-      href: 'mailto:abdolrahman@example.com',
+      value: 'abdoasem2055@gmail.com',
+      href: 'mailto:abdoasem2055@gmail.com',
       gradient: 'text-gradient-primary'
     },
     {
       icon: Phone,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
+      value: '+20 120 395 2384',
+      href: 'tel:+201203952384',
       gradient: 'text-gradient-secondary'
     },
     {
@@ -68,13 +82,13 @@ const ContactSection = () => {
     {
       icon: Github,
       title: 'GitHub',
-      href: 'https://github.com/abdolrahman',
+      href: 'https://github.com/abdo1rahman',
       color: 'hover:text-primary'
     },
     {
       icon: Linkedin,
       title: 'LinkedIn',
-      href: 'https://linkedin.com/in/abdolrahman',
+      href: 'https://linkedin.com/in/abdo1rahman',
       color: 'hover:text-secondary'
     }
   ];

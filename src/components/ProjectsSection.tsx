@@ -1,39 +1,39 @@
 import { ExternalLink, Github } from 'lucide-react';
-import ecommerceImg from '../assets/project-ecommerce.jpg';
-import weatherImg from '../assets/project-weather.jpg';
-import dashboardImg from '../assets/project-dashboard.jpg';
+import urlShortening from '../assets/url shortening.png';
+import blogr from '../assets/blogr.png';
+import newsPage from '../assets/newsPage.png';
 
 const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A modern, full-featured e-commerce platform built with React and TypeScript. Features include product catalog, shopping cart, payment integration, and admin dashboard.',
-      image: ecommerceImg,
-      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Stripe API', 'Node.js'],
-      liveUrl: 'https://example-ecommerce.com',
-      githubUrl: 'https://github.com/abdolrahman/ecommerce-platform',
+      title: 'URL Shortening Landing Page',
+      description: 'A modern design of a URL shortening service landing page that can take your long URL and give your a short, professional-looking URL.',
+      image: urlShortening,
+      technologies: ['React', 'JavaScript', 'CSS', 'Express.js', 'Node.js'],
+      liveUrl: 'https://url-shortening-peach-two.vercel.app/',
+      githubUrl: 'https://github.com/abdo1rahman/url-shortening',
       featured: true
     },
     {
       id: 2,
-      title: 'Weather Dashboard',
-      description: 'Beautiful weather application with real-time data, forecasts, and location-based services. Responsive design with smooth animations and interactive charts.',
-      image: weatherImg,
-      technologies: ['Vue.js', 'JavaScript', 'OpenWeather API', 'Chart.js', 'CSS3'],
-      liveUrl: 'https://example-weather.com',
-      githubUrl: 'https://github.com/abdolrahman/weather-dashboard',
+      title: 'Blogr | A Content Creation Company, Landing Page',
+      description: 'A beautiful landing page for a content creation company with smooth animations and futuristic UI.',
+      image: blogr,
+      technologies: ['React.js', 'JavaScript', 'CSS3'],
+      liveUrl: 'https://blogr-beryl.vercel.app/',
+      githubUrl: 'https://github.com/abdo1rahman/blogr',
       featured: true
     },
     {
       id: 3,
-      title: 'Project Management Tool',
-      description: 'Comprehensive project management dashboard with task tracking, team collaboration, and analytics. Built for productivity and ease of use.',
-      image: dashboardImg,
-      technologies: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'Tailwind CSS'],
-      liveUrl: 'https://example-dashboard.com',
-      githubUrl: 'https://github.com/abdolrahman/project-management',
-      featured: true
+      title: 'News Page',
+      description: 'A modern design of a news website',
+      image: newsPage,
+      technologies: ['React.js', 'JavaScript', 'CSS'],
+      liveUrl: 'https://news-page-gilt.vercel.app/',
+      githubUrl: 'https://github.com/abdo1rahman/news-page',
+      featured: false
     }
   ];
 
@@ -141,7 +141,7 @@ const ProjectsSection = () => {
         {/* View More */}
         <div className="text-center mt-12 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
           <button 
-            onClick={() => handleProjectClick('https://github.com/abdolrahman')}
+            onClick={() => handleProjectClick('https://github.com/abdo1rahman')}
             className="btn-neon-outline"
           >
             View More on GitHub

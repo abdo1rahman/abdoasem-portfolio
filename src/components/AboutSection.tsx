@@ -29,9 +29,9 @@ const AboutSection = () => {
   ];
 
   const technologies = [
-    'React', 'TypeScript', 'JavaScript', 'Next.js', 'Vue.js',
-    'Tailwind CSS', 'SCSS', 'Node.js', 'GraphQL', 'REST APIs',
-    'Git', 'Docker', 'AWS', 'Figma', 'Adobe Creative Suite'
+    'React', 'TypeScript', 'JavaScript',
+    'Tailwind CSS', 'SCSS', 'Node.js', 'REST APIs',
+    'Git', 'Python', 'Vite'
   ];
 
   return (
@@ -58,13 +58,13 @@ const AboutSection = () => {
             
             <div className="space-y-6 text-muted-foreground">
               <p className="text-lg leading-relaxed">
-                With over 5 years of experience in front-end development, I specialize in 
+                With 1+ years of experience in front-end development, I specialize in 
                 creating modern, responsive web applications that not only look great but 
                 also perform exceptionally well.
               </p>
               
               <p className="text-lg leading-relaxed">
-                My journey in web development started with a curiosity about how things work 
+                My journey in web development (and programming in general) started with a curiosity about how things work 
                 on the internet. Today, I'm passionate about pushing the boundaries of what's 
                 possible in web development, always staying up-to-date with the latest 
                 technologies and best practices.
