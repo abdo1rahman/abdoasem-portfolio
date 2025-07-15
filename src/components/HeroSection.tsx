@@ -81,7 +81,6 @@ const HeroSection = () => {
             >
               <Linkedin className="w-8 h-8" />
             </a>
-            {/* !mail not working yet */}
             <a 
               href="mailto:abdoasem2055@gmail.com"
               className="text-muted-foreground hover:text-accent transition-all duration-300 hover:scale-110"

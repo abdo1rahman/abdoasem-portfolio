@@ -229,7 +229,7 @@ const ContactSection = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="btn-neon w-full flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="group btn-neon w-full flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? (
                   <>
@@ -238,7 +238,7 @@ const ContactSection = () => {
                   </>
                 ) : (
                   <>
-                    <Send className="w-4 h-4" />
+                    <Send className="w-4 h-4 transition-transform duration-300 group-hover:rotate-45 group-hover:-translate-x-2" />
                     Send Message
                   </>
                 )}
