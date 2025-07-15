@@ -1,0 +1,107 @@
+import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import heroBg from '../assets/hero-bg.jpg';
+
+const HeroSection = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <section 
+      id="home" 
+      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+      style={{
+        backgroundImage: `linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url(${heroBg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}
+    >
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }}></div>
+      </div>
+
+      <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Main Content */}
+        <div className="animate-fade-in-up">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+            <span className="text-foreground">Hi, I'm </span>
+            <span className="text-gradient-primary block sm:inline">AbdolRahman Asem</span>
+          </h1>
+          
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-light mb-8 text-muted-foreground">
+            Front-End Engineer & 
+            <span className="text-gradient-secondary ml-2">Web Craftsman</span>
+          </h2>
+          
+          <p className="text-lg sm:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
+            I create modern, responsive, and user-friendly web applications 
+            with cutting-edge technologies and exceptional attention to detail.
+          </p>
+          
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
+            <button 
+              onClick={() => scrollToSection('projects')}
+              className="btn-neon w-full sm:w-auto"
+            >
+              View My Work
+            </button>
+            <button 
+              onClick={() => scrollToSection('contact')}
+              className="btn-neon-outline w-full sm:w-auto"
+            >
+              Get In Touch
+            </button>
+          </div>
+          
+          {/* Social Links */}
+          <div className="flex justify-center space-x-8 mb-16">
+            <a 
+              href="https://github.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
+              aria-label="GitHub Profile"
+            >
+              <Github className="w-8 h-8" />
+            </a>
+            <a 
+              href="https://linkedin.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-secondary transition-all duration-300 hover:scale-110"
+              aria-label="LinkedIn Profile"
+            >
+              <Linkedin className="w-8 h-8" />
+            </a>
+            <a 
+              href="mailto:abdolrahman@example.com"
+              className="text-muted-foreground hover:text-accent transition-all duration-300 hover:scale-110"
+              aria-label="Email Contact"
+            >
+              <Mail className="w-8 h-8" />
+            </a>
+          </div>
+        </div>
+        
+        {/* Scroll Indicator */}
+        <button 
+          onClick={() => scrollToSection('about')}
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-primary hover:text-primary-glow transition-all duration-300 hover:scale-110 animate-bounce"
+          aria-label="Scroll to about section"
+        >
+          <ArrowDown className="w-8 h-8" />
+        </button>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
