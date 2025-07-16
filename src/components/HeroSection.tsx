@@ -94,10 +94,10 @@ const HeroSection = () => {
         {/* Scroll Indicator */}
         <button 
           onClick={() => scrollToSection('about')}
-          className="absolute left-1/2 transform -translate-x-1/2 text-primary hover:text-primary-glow transition-all duration-300 hover:scale-110 animate-bounce"
+          className="absolute left-1/2 transform -translate-x-1/2 text-primary hover:text-primary-glow transition-all duration-600 hover:scale-110 animate-bounce"
           aria-label="Scroll to about section"
         >
-          <ArrowDown className="w-8 h-8" />
+          <ArrowDown className="w-8 h-8 hover:scale-110 transition-all duration-200" />
         </button>
       </div>
     </section>
