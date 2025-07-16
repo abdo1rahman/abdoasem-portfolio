@@ -2,6 +2,8 @@ import { ExternalLink, Github } from 'lucide-react';
 import urlShortening from '../assets/url shortening.png';
 import blogr from '../assets/blogr.png';
 import newsPage from '../assets/newsPage.png';
+import ticket from '../assets/ticket.png';
+import { Description } from '@radix-ui/react-toast';
 
 const ProjectsSection = () => {
   const projects = [
@@ -30,9 +32,17 @@ const ProjectsSection = () => {
       title: 'News Page',
       description: 'A modern design of a news website',
       image: newsPage,
-      technologies: ['React.js', 'JavaScript', 'CSS'],
+      technologies: ['React.js', 'JavaScript', 'CSS3'],
       liveUrl: 'https://news-page-gilt.vercel.app/',
       githubUrl: 'https://github.com/abdo1rahman/news-page',
+      featured: false
+    }, 
+    {
+      id: 4,
+      title: 'Ticket Booking Website',
+      Description: 'A simple page for booking event tickets using HTML forms',
+      image: ticket,
+      technologies: ['JavaScript', 'HTML5', 'CSS3', 'Flask.py'],
       featured: false
     }
   ];
