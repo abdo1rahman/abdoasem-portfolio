@@ -40,7 +40,7 @@ const ProjectsSection = () => {
     {
       id: 4,
       title: 'Ticket Booking Website',
-      Description: 'A simple page for booking event tickets using HTML forms',
+      description: 'A simple page for booking event tickets using HTML forms',
       image: ticket,
       technologies: ['JavaScript', 'HTML5', 'CSS3', 'Flask.py'],
       featured: false
