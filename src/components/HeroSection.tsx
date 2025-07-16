@@ -1,4 +1,6 @@
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDown, Mail } from 'lucide-react';
+import { IconContext } from "react-icons";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 import heroBg from '../assets/hero-bg.jpg';
 
 const HeroSection = () => {
@@ -70,7 +72,9 @@ const HeroSection = () => {
               className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
               aria-label="GitHub Profile"
             >
-              <Github className="w-8 h-8" />
+              <IconContext.Provider value={{ className: "w-8 h-8" }}>
+                <SiGithub />
+              </IconContext.Provider>
             </a>
             <a 
               href="https://linkedin.com/in/abdo1rahman" 
@@ -79,7 +83,9 @@ const HeroSection = () => {
               className="text-muted-foreground hover:text-secondary transition-all duration-300 hover:scale-110"
               aria-label="LinkedIn Profile"
             >
-              <Linkedin className="w-8 h-8" />
+              <IconContext.Provider value={{ className: "w-8 h-8" }}>
+                <SiLinkedin />
+              </IconContext.Provider>
             </a>
             <a 
               href="mailto:abdoasem2055@gmail.com"

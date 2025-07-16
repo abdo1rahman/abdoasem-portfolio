@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { SiGithub, SiLinkedin } from "react-icons/si";
 import { toast } from '@/hooks/use-toast';
 import emailjs from 'emailjs-com';
 const SERVICE_ID = 'service_k63y4cl';
@@ -80,13 +81,13 @@ const ContactSection = () => {
 
   const socialLinks = [
     {
-      icon: Github,
+      icon: SiGithub,
       title: 'GitHub',
       href: 'https://github.com/abdo1rahman',
       color: 'hover:text-primary'
     },
     {
-      icon: Linkedin,
+      icon: SiLinkedin,
       title: 'LinkedIn',
       href: 'https://linkedin.com/in/abdo1rahman',
       color: 'hover:text-secondary'
