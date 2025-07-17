@@ -58,6 +58,7 @@ const Navigation = () => {
                   {item.label}
                 </button>
               ))}
+              {/* This is where we'll add the CV link, with a little different accent coloring */}
             </div>
           </div>
 
@@ -68,6 +69,7 @@ const Navigation = () => {
               className="text-foreground hover:text-primary transition-colors duration-300 p-2"
               aria-label="Toggle mobile menu"
             >
+              {/* todo: Maybe make the hamburger button animate into an X  */}
               {isMobileMenuOpen ? (
                 <X className="h-6 w-6" />
               ) : (
