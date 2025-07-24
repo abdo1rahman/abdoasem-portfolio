@@ -25,7 +25,7 @@ const HeroSection = () => {
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 xl:mt-20">
         {/* Main Content */}
         <div className="animate-fade-in-up">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 ultrawide-text">
             <span className="text-foreground">Hi, I'm </span>
             <span className="text-gradient-primary block sm:inline">AbdolRahman Asem</span>
           </h1>
@@ -36,8 +36,7 @@ const HeroSection = () => {
           </h2>
           
           <p className="text-lg sm:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-            I create modern, responsive, and user-friendly web applications 
-            with cutting-edge technologies and exceptional attention to detail.
+            Increase your profits by building your website and reach a wider range of customers.
           </p>
           
           {/* CTA Buttons */}

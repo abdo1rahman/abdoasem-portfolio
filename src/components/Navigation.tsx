@@ -41,8 +41,8 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-xl font-bold text-gradient-primary">
-              AbdolRahman Asem
+            <h1 className="text-xl font-bold text-gradient-primary logo">
+              AA
             </h1>
           </div>
 

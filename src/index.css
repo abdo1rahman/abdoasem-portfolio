@@ -175,6 +175,17 @@ All colors MUST be HSL for proper theming.
 }
 
 @layer components {
+  /* Navbar Section*/
+  .logo {
+    font-family: "Meddon", cursiv;
+  }
+
+  /* Hero section */
+  @media (min-width: 200px) {
+    .ultrawide-text {
+      font-size: 40px;
+    }
+  }
   /* Neon Button Variants */
   .btn-neon {
     @apply relative px-6 py-3 rounded-lg font-medium transition-all duration-300;
