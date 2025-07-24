@@ -84,13 +84,15 @@ const ContactSection = () => {
       icon: SiGithub,
       title: 'GitHub',
       href: 'https://github.com/abdo1rahman',
-      color: 'hover:text-primary'
+      color: 'hover:text-green-400',
+      hoverBorder: 'green-400'
     },
     {
       icon: SiLinkedin,
       title: 'LinkedIn',
       href: 'https://linkedin.com/in/abdo1rahman',
-      color: 'hover:text-secondary'
+      color: 'hover:text-primary',
+      hoverBorder: 'primary'
     }
   ];
 
@@ -146,7 +148,7 @@ const ContactSection = () => {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`p-3 rounded-full bg-muted/20 border border-border/30 ${social.color} transition-all duration-300 hover:scale-110 hover:border-primary/50`}
+                    className={`p-3 rounded-full bg-muted/20 border border-border/30 ${social.color} transition-all duration-300 hover:scale-110 hover:border-${social.hoverBorder}/50`}
                     aria-label={`Follow me on ${social.title}`}
                   >
                     <social.icon className="w-6 h-6" />

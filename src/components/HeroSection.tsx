@@ -22,7 +22,7 @@ const HeroSection = () => {
         backgroundAttachment: 'fixed'
       }}
     >
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 xl:mt-20">
         {/* Main Content */}
         <div className="animate-fade-in-up">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
