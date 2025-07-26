@@ -181,6 +181,9 @@ All colors MUST be HSL for proper theming.
   }
 
   /* Hero section */
+  .adjusted-gap {
+    gap: 3px;
+  }
   @media (min-width: 200px) {
     .ultrawide-text {
       font-size: 40px;

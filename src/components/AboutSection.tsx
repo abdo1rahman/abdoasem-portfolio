@@ -1,4 +1,5 @@
 import { Code, Palette, Rocket, Users } from 'lucide-react';
+import RotatingText from "./RotatingText.jsx";
 
 const AboutSection = () => {
   const skills = [
@@ -30,8 +31,8 @@ const AboutSection = () => {
 
   const technologies = [
     'React', 'TypeScript', 'JavaScript',
-    'Tailwind CSS', 'SCSS', 'Node.js', 'REST APIs',
-    'Git', 'Python', 'Vite'
+    'Tailwind CSS', 'SASS/SCSS', 'Node.js', 'REST APIs',
+    'Git', 'Python', 'Vite', 'framer-motion'
   ];
 
   return (
@@ -43,9 +44,10 @@ const AboutSection = () => {
             <span className="text-gradient-primary">About</span> Me
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Passionate front-end engineer with a love for creating digital experiences 
-            that make a difference. I combine technical expertise with creative vision 
-            to build solutions that users love.
+            I design and build websites for individuals, startups, or businesses who seek to establish their online presence.
+            It can range from a personal portfolio website to a fully fledged web app showcasing your company's services and values.
+            I stand out for my keen care for details and simplicity, delivering your message without cluttering your clients' minds.
+
           </p>
         </div>
 
@@ -53,7 +55,14 @@ const AboutSection = () => {
           {/* Content */}
           <div className="animate-slide-in-left">
             <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-foreground">
-              Crafting Digital Experiences
+              My{" "}
+              <RotatingText
+                texts={["Journey", "Experience", "Passion"]}
+                staggerDuration={.03}
+                mainClassName="text-primary-glow"
+                rotationalInterval={2500}
+              />{" "}
+              With Programming
             </h3>
             
             <div className="space-y-6 text-muted-foreground">

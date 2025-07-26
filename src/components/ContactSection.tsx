@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { toast } from '@/hooks/use-toast';
+
+// EmailJS items
 import emailjs from 'emailjs-com';
 const SERVICE_ID = 'service_k63y4cl';
 const TEMPLATE_ID = 'template_f6w368j';

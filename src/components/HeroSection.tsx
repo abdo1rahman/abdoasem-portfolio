@@ -14,7 +14,7 @@ const HeroSection = () => {
   return (
     <section 
       id="home" 
-      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+      className="min-h-screen flex  adjusted-gap items-center justify-center relative overflow-hidden"
       style={{
         backgroundImage: `linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url(${heroBg})`,
         backgroundSize: 'cover',
@@ -25,7 +25,7 @@ const HeroSection = () => {
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 xl:mt-20">
         {/* Main Content */}
         <div className="animate-fade-in-up">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 ultrawide-text">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold mb-6 ultrawide-text">
             <span className="text-foreground">Hi, I'm </span>
             <span className="text-gradient-primary block sm:inline">AbdolRahman Asem</span>
           </h1>

@@ -33,19 +33,12 @@ const Navigation = () => {
     <nav 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-card/80 backdrop-blur-lg border-b border-border/50' 
+          ? 'lg:bg-card/80 lg:backdrop-blur-lg lg:border-b lg:border-border/50' 
           : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <h1 className="text-xl font-bold text-gradient-primary logo">
-              AA
-            </h1>
-          </div>
-
+        <div className="flex items-center lg:justify-center justify-end h-16">
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
@@ -53,7 +46,7 @@ const Navigation = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="link-underline text-foreground hover:text-primary transition-colors duration-300 px-3 py-2 text-sm font-medium"
+                  className="link-underline text-foreground hover:text-primary transition-colors duration-300 px-3 py-2 text-sm xl:text-lg font-medium"
                 >
                   {item.label}
                 </button>
