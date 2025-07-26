@@ -61,6 +61,7 @@ const AboutSection = () => {
                 staggerDuration={.03}
                 mainClassName="text-primary-glow"
                 rotationalInterval={2500}
+                exit={{ y: "-70%", opacity: 0 }}
               />{" "}
               With Programming
             </h3>
