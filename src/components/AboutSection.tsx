@@ -45,7 +45,7 @@ const AboutSection = () => {
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             I design and build websites for individuals, startups, or businesses who seek to establish their online presence. 
-            {/* It can range from a personal portfolio website to a fully fledged web app showcasing your company's services and values. */}
+            {/* It can range from a personal portfolio website to a fully fledged web app showcasing your company's services and values. */}{" "}
             I stand out for my keen care for details and simplicity, delivering your message without cluttering your clients' minds.
 
           </p>
