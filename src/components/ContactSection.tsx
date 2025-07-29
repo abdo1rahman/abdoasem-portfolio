@@ -75,8 +75,8 @@ const ContactSection = () => {
     {
       icon: MapPin,
       title: 'Location',
-      value: 'Remote / Open to Relocation',
-      href: '#',
+      value: 'Tanta, Egypt',
+      href: '',
       gradient: 'text-gradient-primary'
     }
   ];

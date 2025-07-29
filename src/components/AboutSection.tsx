@@ -1,30 +1,30 @@
 import { Code, Palette, Rocket, Users } from 'lucide-react';
-import RotatingText from "./RotatingText.jsx";
+import RotatingText from "./RotatingText";
 
 const AboutSection = () => {
   const skills = [
     {
       icon: Code,
       title: 'Clean Code',
-      description: 'Writing maintainable, scalable, and efficient code with modern best practices.',
+      description: 'I write maintainable, scalable, and efficient code with modern best practices.',
       gradient: 'text-gradient-primary'
     },
     {
       icon: Palette,
       title: 'UI/UX Design',
-      description: 'Creating beautiful, intuitive interfaces that provide exceptional user experiences.',
+      description: 'I create beautiful, intuitive interfaces that provide exceptional user experiences.',
       gradient: 'text-gradient-secondary'
     },
     {
       icon: Rocket,
       title: 'Performance',
-      description: 'Building fast, optimized applications that deliver outstanding performance.',
+      description: 'I build fast, optimized applications that deliver outstanding performance.',
       gradient: 'text-gradient-primary'
     },
     {
       icon: Users,
       title: 'Collaboration',
-      description: 'Working effectively in teams to deliver projects on time and exceed expectations.',
+      description: 'I work effectively in teams to deliver projects on time and exceed expectations.',
       gradient: 'text-gradient-secondary'
     }
   ];
@@ -32,7 +32,7 @@ const AboutSection = () => {
   const technologies = [
     'React', 'TypeScript', 'JavaScript',
     'Tailwind CSS', 'SASS/SCSS', 'Node.js', 'REST APIs',
-    'Git', 'Python', 'Vite', 'framer-motion'
+    'Git', 'Python', 'framer-motion', 'SQL'
   ];
 
   return (
@@ -47,7 +47,6 @@ const AboutSection = () => {
             I design and build websites for individuals, startups, or businesses who seek to establish their online presence. 
             {/* It can range from a personal portfolio website to a fully fledged web app showcasing your company's services and values. */}{" "}
             I stand out for my keen care for details and simplicity, delivering your message without cluttering your clients' minds.
-
           </p>
         </div>
 
@@ -60,7 +59,7 @@ const AboutSection = () => {
                 texts={["Journey", "Experience", "Passion"]}
                 staggerDuration={.03}
                 mainClassName="text-primary-glow"
-                rotationalInterval={2500}
+                rotationInterval={2500}
                 exit={{ y: "-70%", opacity: 0 }}
               />{" "}
               With Programming
@@ -68,7 +67,7 @@ const AboutSection = () => {
             
             <div className="space-y-6 text-muted-foreground">
               <p className="text-lg leading-relaxed">
-                With 1+ years of experience in front-end development, I specialize in 
+                With 1 year of experience in front-end development, I specialize in 
                 creating modern, responsive web applications that not only look great but 
                 also perform exceptionally well.
               </p>

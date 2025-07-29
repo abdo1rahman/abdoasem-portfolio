@@ -10,9 +10,9 @@ const Footer = () => {
           {/* Copyright */}
           <div className="flex items-center gap-2 text-muted-foreground">
             <span>© {currentYear} AbdolRahman Asem. Made with</span>
-            <Heart className="w-4 h-4 text-accent animate-pulse" />
+            <Heart className="w-4 h-4 text-accent animate-pulse duration-1000" />
             <span>and</span>
-            <Code className="w-4 h-4 text-primary" />
+            <Code className="w-4 h-4 text-primary animate-pulse duration-1000" />
           </div>
 
           {/* Links */}
@@ -25,8 +25,8 @@ const Footer = () => {
             </a>
             <span className="text-border">|</span>
             <a 
-              href="mailto:abdolrahman@example.com" 
-              className="text-muted-foreground hover:text-primary transition-colors duration-300"
+              href="mailto:abdoasem2055@gmail.com" 
+              className="text-muted-foreground hover:text-primary transition-colors duration-2000 animate-pulse"
             >
               Contact
             </a>

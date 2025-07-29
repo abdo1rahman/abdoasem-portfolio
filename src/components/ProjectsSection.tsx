@@ -1,9 +1,10 @@
 import { ExternalLink, Github } from 'lucide-react';
+import { SiGithub } from "react-icons/si";
 import urlShortening from '../assets/url shortening.png';
 import blogr from '../assets/blogr.png';
 import newsPage from '../assets/newsPage.png';
 import ticket from '../assets/ticket.png';
-import { Description } from '@radix-ui/react-toast';
+// import { Description } from '@radix-ui/react-toast';
 
 const ProjectsSection = () => {
   const projects = [
@@ -139,7 +140,7 @@ const ProjectsSection = () => {
                     className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors duration-300"
                     aria-label={`View ${project.title} source code`}
                   >
-                    <Github className="w-4 h-4" />
+                    <SiGithub className="w-4 h-4" />
                     <span className="text-sm font-medium">Code</span>
                   </button>
                 </div>
