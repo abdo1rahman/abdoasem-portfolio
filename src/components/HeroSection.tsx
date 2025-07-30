@@ -61,7 +61,7 @@ const HeroSection = () => {
               href="https://github.com/abdo1rahman" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-green-400 transition-all duration-300 hover:scale-110"
+              className="text-muted-foreground hover:text-green-500 transition-all duration-300 hover:scale-110"
               aria-label="GitHub Profile"
             >
               <IconContext.Provider value={{ className: "w-8 h-8" }}>
@@ -72,7 +72,7 @@ const HeroSection = () => {
               href="https://linkedin.com/in/abdo1rahman" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
+              className="text-muted-foreground hover:text-blue-700 transition-all duration-300 hover:scale-110"
               aria-label="LinkedIn Profile"
             >
               <IconContext.Provider value={{ className: "w-8 h-8" }}>

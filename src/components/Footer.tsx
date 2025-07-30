@@ -26,7 +26,7 @@ const Footer = () => {
             <span className="text-border">|</span>
             <a 
               href="mailto:abdoasem2055@gmail.com" 
-              className="text-muted-foreground hover:text-primary transition-colors duration-2000 animate-pulse"
+              className="text-muted-foreground hover:text-primary transition-colors duration-1000 animate-pulse"
             >
               Contact
             </a>

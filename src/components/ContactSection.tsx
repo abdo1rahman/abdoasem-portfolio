@@ -86,14 +86,14 @@ const ContactSection = () => {
       icon: SiGithub,
       title: 'GitHub',
       href: 'https://github.com/abdo1rahman',
-      color: 'hover:text-green-400',
-      hoverBorder: 'green-400'
+      color: 'hover:text-green-500',
+      hoverBorder: 'primary'
     },
     {
       icon: SiLinkedin,
       title: 'LinkedIn',
       href: 'https://linkedin.com/in/abdo1rahman',
-      color: 'hover:text-primary',
+      color: 'hover:text-blue-700',
       hoverBorder: 'primary'
     }
   ];
@@ -144,7 +144,7 @@ const ContactSection = () => {
             <div>
               <h4 className="text-lg font-semibold mb-6 text-foreground">Follow Me</h4>
               <div className="flex space-x-6">
-                {socialLinks.map((social) => (
+                {socialLinks.map(social => (
                   <a
                     key={social.title}
                     href={social.href}
@@ -163,7 +163,7 @@ const ContactSection = () => {
           {/* Contact Form */}
           <div className="animate-slide-in-right">
             <form onSubmit={handleSubmit} className="card-glow">
-              <h3 className="text-2xl font-bold mb-6 text-foreground">Send a Message</h3>
+              <h3 className="text-2xl font-bold mb-6 text-foreground">Got A Project?</h3>
               
               <div className="grid sm:grid-cols-2 gap-6 mb-6">
                 <div>
