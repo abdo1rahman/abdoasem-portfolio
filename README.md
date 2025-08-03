@@ -38,6 +38,6 @@ If you have any suggestions, [open an issue](https://github.com/abdo1rahman/abdo
 
 Not only was this project a show of my skills, but it was a huge chance for me to learn new things. I am proud of every pixel in this project, every line of code, and every bug I faced. This project was my first, and probably only, chance to see what styles _I_ like, what colors _I_ enjoy, and what animates _me_.
 
-This will not be my last try at building a portfolio; I am still going to learn a lot more things, and then I will have to build a new website that can truly show off those new skills. I will also keep you posted on what I am learning, what challenges I will be facing, and what life lessons I will take on my **_upcoming blog website_** whose look and feel will be inspired by this very project.
+This will not be my last try at building a portfolio; I am still going to learn a lot more things, and then I will have to build a new website that can truly show off those new skills. I will also keep you posted on what I am learning, what challenges I will be facing, and what life lessons I will take on my <span style="color: cyan; font-style: italic; font-weight: 700; text-decoration: underline;">upcoming blog website</span> whose look and feel will be inspired by this very project.
 
 **Thank you for checking out this repository.**
