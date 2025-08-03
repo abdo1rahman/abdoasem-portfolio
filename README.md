@@ -34,6 +34,7 @@
 Even though this is supposed to be my way of building websites, I will be thrilled to have your ideas on styling, animations and features.
 If you have any suggestions, [open an issue](https://github.com/abdo1rahman/abdoasem-portfolio/issues), or submit a pull request.
 
+<hr>
 # About Project:
 
 Not only was this project a show of my skills, but it was a huge chance for me to learn new things. I am proud of every pixel in this project, every line of code, and every bug I faced. This project was my first, and probably only, chance to see what styles _I_ like, what colors _I_ enjoy, and what animates _me_.
