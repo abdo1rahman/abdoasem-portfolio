@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
-import { SiGithub, SiLinkedin } from "react-icons/si";
+import { SiGithub, SiLinkedin, SiUpwork, SiTiktok } from "react-icons/si";
 import { toast } from '@/hooks/use-toast';
 
 // EmailJS items
@@ -87,14 +87,28 @@ const ContactSection = () => {
       title: 'GitHub',
       href: 'https://github.com/abdo1rahman',
       color: 'hover:text-green-500',
-      hoverBorder: 'primary'
+      hoverBorder: 'hover:border-green-500'
     },
     {
       icon: SiLinkedin,
       title: 'LinkedIn',
       href: 'https://linkedin.com/in/abdo1rahman',
       color: 'hover:text-blue-700',
-      hoverBorder: 'primary'
+      hoverBorder: 'hover:border-blue-700'
+    },
+    {
+      icon: SiUpwork,
+      title: 'Upwork',
+      href: "https://www.upwork.com/freelancers/~01a2f19b5d077a7bf8?mp_source=share",
+      color: 'hover:text-green-500',
+      hoverBorder: 'hover:border-green-500'
+    },
+    {
+      icon: SiTiktok,
+      title: 'TikTok',
+      href: "https://tiktok.com/@abdo1rahman_asem",
+      color: 'hover:text-pink-600',
+      hoverBorder: 'hover:border-pink-600'
     }
   ];
 
@@ -150,7 +164,7 @@ const ContactSection = () => {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`p-3 rounded-full bg-muted/20 border border-border/30 ${social.color} transition-all duration-300 hover:scale-110 hover:border-${social.hoverBorder}/50`}
+                    className={`p-3 rounded-full bg-muted/20 border border-border/30 ${social.color} transition-all duration-300 hover:scale-110 ${social.hoverBorder}`}
                     aria-label={`Follow me on ${social.title}`}
                   >
                     <social.icon className="w-6 h-6" />

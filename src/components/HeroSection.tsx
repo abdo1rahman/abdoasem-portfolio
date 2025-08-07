@@ -1,6 +1,6 @@
 import { ArrowDown, Mail } from 'lucide-react';
 import { IconContext } from "react-icons";
-import { SiGithub, SiLinkedin } from "react-icons/si";
+import { SiGithub, SiLinkedin, SiUpwork, SiTiktok } from "react-icons/si";
 import heroBg from '../assets/hero-bg.jpg';
 
 const HeroSection = () => {
@@ -77,6 +77,28 @@ const HeroSection = () => {
             >
               <IconContext.Provider value={{ className: "w-8 h-8" }}>
                 <SiLinkedin />
+              </IconContext.Provider>
+            </a>
+            <a
+              href="https://www.upwork.com/freelancers/~01a2f19b5d077a7bf8?mp_source=share"
+              target='_blank'
+              rel='noopener noreferrer'
+              className="text-muted-foreground hover:text-green-500 transition-all duration-300 hover:scale-110"
+              aria-label="Upwork Profile"
+            >
+              <IconContext.Provider value={{ className: "w-8 h-8" }}>
+                <SiUpwork />
+              </IconContext.Provider>
+            </a>
+            <a
+              href="https://tiktok.com/@abdo1rahman_asem"
+              target='_blank'
+              rel='noopener noreferrer'
+              className="text-muted-foreground hover:text-pink-600 transition-all duration-300 hover:scale-110"
+              aria-label="TikTok Profile"
+            >
+              <IconContext.Provider value={{ className: "w-8 h-8" }}>
+                <SiTiktok />
               </IconContext.Provider>
             </a>
             <a 
