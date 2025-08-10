@@ -103,13 +103,13 @@ const ContactSection = () => {
       color: 'hover:text-green-500',
       hoverBorder: 'hover:border-green-500'
     },
-    {
-      icon: SiTiktok,
-      title: 'TikTok',
-      href: "https://tiktok.com/@abdo1rahman_asem",
-      color: 'hover:text-pink-600',
-      hoverBorder: 'hover:border-pink-600'
-    }
+    // {
+    //   icon: SiTiktok,
+    //   title: 'TikTok',
+    //   href: "https://tiktok.com/@abdo1rahman_asem",
+    //   color: 'hover:text-pink-600',
+    //   hoverBorder: 'hover:border-pink-600'
+    // }
   ];
 
   return (
@@ -156,8 +156,8 @@ const ContactSection = () => {
 
             {/* Social Links */}
             <div>
-              <h4 className="text-lg font-semibold mb-6 text-foreground">Follow Me</h4>
-              <div className="flex space-x-6">
+              <h4 className="text-lg font-semibold mb-6 text-foreground p-1">Follow Me</h4>
+              <div className="relative flex space-x-6">
                 {socialLinks.map(social => (
                   <a
                     key={social.title}
@@ -170,6 +170,17 @@ const ContactSection = () => {
                     <social.icon className="w-6 h-6" />
                   </a>
                 ))}
+                <a
+                  href="https://tiktok.com/@abdo1rahman_asem"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group p-3 rounded-full bg-muted/20 border border-border/30 transition-all duration-300 hover:scale-110 hover:border-pink-600"
+                  aria-label="Follow me on TikTok"
+                >
+                  <SiTiktok className='w-6 h-6 group-hover:text-white' />
+                  <SiTiktok className="w-6 h-6 absolute group-hover:left-[0.6rem] bottom-3 group-hover:text-primary transition-all duration-300 -z-10" />
+                  <SiTiktok className="w-6 h-6 absolute group-hover:right-[0.6rem] bottom-3 group-hover:text-pink-600 transition-all duration-300 -z-10" />
+                </a>
               </div>
             </div>
           </div>

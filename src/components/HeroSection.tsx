@@ -94,11 +94,13 @@ const HeroSection = () => {
               href="https://tiktok.com/@abdo1rahman_asem"
               target='_blank'
               rel='noopener noreferrer'
-              className="text-muted-foreground hover:text-pink-600 transition-all duration-300 hover:scale-110"
+              className="text-muted-foreground transition-all duration-300 hover:scale-110 group relative"
               aria-label="TikTok Profile"
             >
               <IconContext.Provider value={{ className: "w-8 h-8" }}>
-                <SiTiktok />
+                <SiTiktok className='group-hover:text-white' />
+                <SiTiktok className="absolute group-hover:text-primary right-[2px] bottom-0 hidden group-hover:block -z-10" />
+                <SiTiktok className="absolute left-[2px] bottom-0 hidden group-hover:block group-hover:text-pink-600 transition-all duration-300 -z-10" />
               </IconContext.Provider>
             </a>
             <a 
