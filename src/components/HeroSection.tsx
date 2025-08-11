@@ -1,6 +1,7 @@
 import { ArrowDown, Mail } from 'lucide-react';
 import { IconContext } from "react-icons";
 import { SiGithub, SiLinkedin, SiUpwork, SiTiktok } from "react-icons/si";
+import KhamsatIcon from './KhamsatIcon';
 import heroBg from '../assets/hero-bg.jpg';
 
 const HeroSection = () => {
@@ -76,7 +77,7 @@ const HeroSection = () => {
               aria-label="LinkedIn Profile"
             >
               <IconContext.Provider value={{ className: "w-8 h-8" }}>
-                <SiLinkedin className='group-hover:bg-white rounded-[3px]' />
+                <SiLinkedin className='bg-transparent transition-all duration-300 group-hover:bg-white rounded-[3px]' />
               </IconContext.Provider>
             </a>
             <a
@@ -89,6 +90,15 @@ const HeroSection = () => {
               <IconContext.Provider value={{ className: "w-8 h-8" }}>
                 <SiUpwork />
               </IconContext.Provider>
+            </a>
+            <a
+              href="https://khamsat.com/user/abdo1rahman"
+              target='_blank'
+              rel='noopener noreferrer'
+              className="group text-muted-foreground transition-all duration-300 hover:scale-110"
+              aria-label="Khamsat Profile"
+            >
+              <KhamsatIcon className="khamsat" />
             </a>
             <a
               href="https://tiktok.com/@abdo1rahman_asem"

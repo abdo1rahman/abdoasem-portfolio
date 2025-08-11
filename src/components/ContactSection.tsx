@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { SiGithub, SiLinkedin, SiUpwork, SiTiktok } from "react-icons/si";
+import KhamsatIcon from './KhamsatIcon';
 import { toast } from '@/hooks/use-toast';
 
 // EmailJS items
@@ -102,6 +103,13 @@ const ContactSection = () => {
       href: "https://www.upwork.com/freelancers/~01a2f19b5d077a7bf8?mp_source=share",
       color: 'hover:text-green-500',
       hoverBorder: 'hover:border-green-500'
+    },
+    {
+      icon: KhamsatIcon,
+      title: 'Khamsat',
+      href: "https://khamsat.com/user/abdo1rahman",
+      color: 'khamsat khamsat-contact-section',
+      hoverBorder: 'hover:border-yellow-500'
     },
     // {
     //   icon: SiTiktok,
