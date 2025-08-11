@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import { SiGithub } from "react-icons/si";
 import urlShortening from '../assets/url shortening.png';
 import blogr from '../assets/blogr.png';
