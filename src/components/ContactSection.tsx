@@ -168,7 +168,6 @@ const ContactSection = () => {
                     aria-label={`Follow me on ${social.title}`}
                   >
                     <social.icon className={`w-6 h-6 ${social.title === 'LinkedIn' && "group-hover:bg-white rounded-[3px]"}`} />
-                    <social.icon className={`w-6 h-6 ${social.title === 'LinkedIn' && "group-hover:bg-white rounded-[3px]"} p-0`} />
                   </a>
                 ))}
                 <a
