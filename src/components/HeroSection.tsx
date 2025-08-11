@@ -72,11 +72,11 @@ const HeroSection = () => {
               href="https://linkedin.com/in/abdo1rahman" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-blue-700 transition-all duration-300 hover:scale-110"
+              className="group text-muted-foreground hover:text-blue-700 transition-all duration-300 hover:scale-110"
               aria-label="LinkedIn Profile"
             >
               <IconContext.Provider value={{ className: "w-8 h-8" }}>
-                <SiLinkedin />
+                <SiLinkedin className='group-hover:bg-white rounded-[3px]' />
               </IconContext.Provider>
             </a>
             <a

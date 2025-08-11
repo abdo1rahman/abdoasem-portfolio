@@ -164,10 +164,10 @@ const ContactSection = () => {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`p-3 rounded-full bg-muted/20 border border-border/30 ${social.color} transition-all duration-300 hover:scale-110 ${social.hoverBorder}`}
+                    className={`group p-3 rounded-full bg-muted/20 border border-border/30 ${social.color} transition-all duration-300 hover:scale-110 ${social.hoverBorder}`}
                     aria-label={`Follow me on ${social.title}`}
                   >
-                    <social.icon className="w-6 h-6" />
+                    <social.icon className={`w-6 h-6 ${social.title === 'LinkedIn' && "group-hover:bg-white rounded-[3px]"} p-0`} />
                   </a>
                 ))}
                 <a
