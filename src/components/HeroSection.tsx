@@ -1,7 +1,8 @@
 import { ArrowDown, Mail } from 'lucide-react';
 import { IconContext } from "react-icons";
-import { SiGithub, SiLinkedin, SiUpwork, SiTiktok } from "react-icons/si";
-import KhamsatIcon from './KhamsatIcon';
+import { SiGithub, SiLinkedin , SiTiktok } from "react-icons/si";
+// import KhamsatIcon from './KhamsatIcon';
+import FiverrIcon from "./ui/FiverrIcon";
 import heroBg from '../assets/hero-bg.jpg';
 
 const HeroSection = () => {
@@ -87,18 +88,7 @@ const HeroSection = () => {
               className="text-muted-foreground hover:text-green-500 transition-all duration-300 hover:scale-110"
               aria-label="Upwork Profile"
             >
-              <IconContext.Provider value={{ className: "w-8 h-8" }}>
-                <SiUpwork />
-              </IconContext.Provider>
-            </a>
-            <a
-              href="https://khamsat.com/user/abdo1rahman"
-              target='_blank'
-              rel='noopener noreferrer'
-              className="group text-muted-foreground transition-all duration-300 hover:scale-110"
-              aria-label="Khamsat Profile"
-            >
-              <KhamsatIcon className="khamsat" />
+              <FiverrIcon className="h-10 w-10" />
             </a>
             <a
               href="https://tiktok.com/@abdo1rahman_asem"
