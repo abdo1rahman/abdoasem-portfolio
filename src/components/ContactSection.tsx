@@ -101,7 +101,7 @@ const ContactSection = () => {
     {
       icon: FiverrIcon,
       title: 'Fiverr',
-      href: "https://www.upwork.com/freelancers/~01a2f19b5d077a7bf8?mp_source=share",
+      href: "https://fiverr.com/abdo1rahman",
       color: 'hover:text-green-500',
       hoverBorder: 'hover:border-green-500',
     },

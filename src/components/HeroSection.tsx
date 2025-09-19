@@ -82,7 +82,7 @@ const HeroSection = () => {
               </IconContext.Provider>
             </a>
             <a
-              href="https://www.upwork.com/freelancers/~01a2f19b5d077a7bf8?mp_source=share"
+              href="https://fiverr.com/abdo1rahman"
               target='_blank'
               rel='noopener noreferrer'
               className="text-muted-foreground hover:text-green-500 transition-all duration-300 hover:scale-110"
@@ -99,8 +99,8 @@ const HeroSection = () => {
             >
               <IconContext.Provider value={{ className: "w-8 h-8" }}>
                 <SiTiktok className='group-hover:text-white' />
-                <SiTiktok className="absolute group-hover:text-primary right-[2px] bottom-0 hidden group-hover:block -z-10" />
-                <SiTiktok className="absolute left-[2px] bottom-0 hidden group-hover:block group-hover:text-pink-600 transition-all duration-300 -z-10" />
+                <SiTiktok className="absolute group-hover:text-primary right-[2px] top-0 hidden group-hover:block -z-10" />
+                <SiTiktok className="absolute left-[2px] top-0 hidden group-hover:block group-hover:text-pink-600 transition-all duration-300 -z-10" />
               </IconContext.Provider>
             </a>
             <a 
