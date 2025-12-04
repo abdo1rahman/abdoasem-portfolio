@@ -277,4 +277,20 @@ All colors MUST be HSL for proper theming.
   .section-padding {
     @apply py-20 px-4 md:px-8 lg:px-12;
   }
+
+  .animate-pending {
+    animation: pending 2s ease infinite;
+  }
+
+  @keyframes pending {
+    0% {
+      opacity: 0.3;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.3;
+    }
+  }
 }

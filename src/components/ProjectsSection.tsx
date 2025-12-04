@@ -1,55 +1,68 @@
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink } from "lucide-react";
 import { SiGithub } from "react-icons/si";
-import urlShortening from '../assets/url shortening.png';
-import blogr from '../assets/blogr.png';
-import newsPage from '../assets/newsPage.png';
-import ticket from '../assets/ticket.png';
+import urlShortening from "../assets/url shortening.png";
+import blogr from "../assets/blogr.png";
+import newsPage from "../assets/newsPage.png";
+import ticket from "../assets/ticket.png";
+import positivus from "../assets/positivus.png";
 // import { Description } from '@radix-ui/react-toast';
 
 const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: 'URL Shortening Landing Page',
-      description: 'A modern design of a URL shortening service landing page that can take your long URL and give your a short, professional-looking URL.',
-      image: urlShortening,
-      technologies: ['React', 'JavaScript', 'CSS', 'Express.js', 'Node.js'],
-      liveUrl: 'https://url-shortening-peach-two.vercel.app/',
-      githubUrl: 'https://github.com/abdo1rahman/url-shortening',
-      featured: true
+      title: "Positivus Website",
+      description: "A modern design for the Positvus digital marketing agency",
+      image: positivus,
+      technologies: ["React", "React Router", "Tailwind CSS"],
+      liveUrl: "https://positivus.abdoasem.com",
+      githubUrl: "https://github.com/abdo1rahman/positivus",
+      tip: "Pending",
     },
     {
       id: 2,
-      title: 'Blogr | A Content Creation Company, Landing Page',
-      description: 'A beautiful landing page for a content creation company with smooth animations and futuristic UI.',
-      image: blogr,
-      technologies: ['React.js', 'JavaScript', 'CSS3'],
-      liveUrl: 'https://blogr-beryl.vercel.app/',
-      githubUrl: 'https://github.com/abdo1rahman/blogr',
-      featured: true
+      title: "URL Shortening Landing Page",
+      description:
+        "A modern design of a URL shortening service landing page that can take your long URL and give your a short, professional-looking URL.",
+      image: urlShortening,
+      technologies: ["React", "JavaScript", "CSS", "Express.js", "Node.js"],
+      liveUrl: "https://url-shortening-peach-two.vercel.app/",
+      githubUrl: "https://github.com/abdo1rahman/url-shortening",
+      tip: "Featured",
     },
     {
       id: 3,
-      title: 'News Page',
-      description: 'A modern design of a news website',
-      image: newsPage,
-      technologies: ['React.js', 'JavaScript', 'CSS3'],
-      liveUrl: 'https://news-page-gilt.vercel.app/',
-      githubUrl: 'https://github.com/abdo1rahman/news-page',
-      featured: false
-    }, 
+      title: "Blogr | A Content Creation Company, Landing Page",
+      description:
+        "A beautiful landing page for a content creation company with smooth animations and futuristic UI.",
+      image: blogr,
+      technologies: ["React.js", "JavaScript", "CSS3"],
+      liveUrl: "https://blogr-beryl.vercel.app/",
+      githubUrl: "https://github.com/abdo1rahman/blogr",
+      tip: "Featured",
+    },
     {
       id: 4,
-      title: 'Ticket Booking Website',
-      description: 'A simple page for booking event tickets using HTML forms',
+      title: "News Page",
+      description: "A modern design of a news website",
+      image: newsPage,
+      technologies: ["React.js", "JavaScript", "CSS3"],
+      liveUrl: "https://news-page-gilt.vercel.app/",
+      githubUrl: "https://github.com/abdo1rahman/news-page",
+      tip: undefined,
+    },
+    {
+      id: 5,
+      title: "Ticket Booking Website",
+      description: "A simple page for booking event tickets using HTML forms",
       image: ticket,
-      technologies: ['JavaScript', 'HTML5', 'CSS3', 'Flask.py'],
-      featured: false
-    }
+      technologies: ["JavaScript", "HTML5", "CSS3", "Flask.py"],
+      tip: undefined,
+    },
   ];
 
   const handleProjectClick = (url: string) => {
-    window.open(url, '_blank', 'noopener,noreferrer');
+    window.open(url, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -61,15 +74,16 @@ const ProjectsSection = () => {
             My <span className="text-gradient-primary">Projects</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Here are some of the projects I've worked on. Each one represents a unique 
-            challenge and showcases different aspects of my skills and creativity.
+            Here are some of the projects I've worked on. Each one represents a
+            unique challenge and showcases different aspects of my skills and
+            creativity.
           </p>
         </div>
 
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div 
+            <div
               key={project.id}
               className="card-glow group cursor-pointer animate-fade-in-up"
               style={{ animationDelay: `${index * 0.2}s` }}
@@ -77,8 +91,8 @@ const ProjectsSection = () => {
             >
               {/* Project Image */}
               <div className="relative overflow-hidden rounded-lg mb-6 aspect-video">
-                <img 
-                  src={project.image} 
+                <img
+                  src={project.image}
                   alt={`${project.title} screenshot`}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
@@ -89,9 +103,18 @@ const ProjectsSection = () => {
                     View Live Site
                   </span>
                 </div>
-                {project.featured && (
-                  <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium">
-                    Featured
+                {project.tip && (
+                  <div
+                    className={
+                      "absolute top-4 right-4 text-primary-foreground px-3 py-1 rounded-full text-xs font-medium " +
+                      `${
+                        project.tip === "Featured"
+                          ? "bg-primary-glow"
+                          : "bg-secondary animate-pending"
+                      }`
+                    }
+                  >
+                    {project.tip}
                   </div>
                 )}
               </div>
@@ -101,7 +124,7 @@ const ProjectsSection = () => {
                 <h3 className="text-xl font-bold text-foreground group-hover:text-gradient-primary transition-all duration-300">
                   {project.title}
                 </h3>
-                
+
                 <p className="text-muted-foreground leading-relaxed">
                   {project.description}
                 </p>
@@ -109,7 +132,7 @@ const ProjectsSection = () => {
                 {/* Technologies */}
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech) => (
-                    <span 
+                    <span
                       key={tech}
                       className="px-3 py-1 bg-muted/20 rounded-full text-xs font-medium text-muted-foreground border border-border/30"
                     >
@@ -131,7 +154,7 @@ const ProjectsSection = () => {
                     <ExternalLink className="w-4 h-4" />
                     <span className="text-sm font-medium">Live Site</span>
                   </button>
-                  
+
                   <button
                     onClick={(e) => {
                       e.stopPropagation();
@@ -150,9 +173,12 @@ const ProjectsSection = () => {
         </div>
 
         {/* View More */}
-        <div className="text-center mt-12 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-          <button 
-            onClick={() => handleProjectClick('https://github.com/abdo1rahman')}
+        <div
+          className="text-center mt-12 animate-fade-in-up"
+          style={{ animationDelay: "0.6s" }}
+        >
+          <button
+            onClick={() => handleProjectClick("https://github.com/abdo1rahman")}
             className="btn-neon-outline"
           >
             View More on GitHub
